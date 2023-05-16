@@ -8,6 +8,7 @@ import { ButtonComponent } from './components/UI/button/button.component';
 import { FormsModule } from '@angular/forms';
 import { InputComponent } from './components/UI/input/input.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NotesComponent } from './components/notes/notes.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     HeaderComponent,
     ButtonComponent,
     InputComponent,
-    SidebarComponent
+    SidebarComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
