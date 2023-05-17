@@ -1,10 +1,12 @@
-# MicroFrontendApp
+# Keep Notes
+using the microfrontend architecture in order to improve my skills in angular and 
+its environment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm run run:all` for a dev server. Navigate to `http://localhost:4000/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
