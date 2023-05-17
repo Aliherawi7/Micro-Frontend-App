@@ -11,7 +11,7 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "hostApp",
-    publicPath: "auto"
+    publicPath: "http://localhost:4000/"
   },
   optimization: {
     runtimeChunk: false
@@ -32,6 +32,7 @@ module.exports = {
       //For hosts (please adjust)
       remotes: {
         "mfe1": "http://localhost:4001/remoteEntry.js",
+        "mfe2": "http://localhost:4002/remoteEntry.js",
       },
 
       shared: share({

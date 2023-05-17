@@ -20,6 +20,14 @@ const routes: Routes = [
     }).then(m => m.AppModule)
   },
   {
+    path: "micro2",
+    loadChildren: (): Promise<any> => loadRemoteModule({
+      remoteEntry: "http://localhost:4002/remoteEntry.js",
+      remoteName: "mfe2",
+      exposedModule: "./Module"
+    }).then(m => m.AppModule)
+  },
+  {
     path: "**",
     component: NotFoundComponent
   },
