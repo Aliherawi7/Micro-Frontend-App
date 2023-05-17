@@ -3,10 +3,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: calc(100vh - 62px);
+    height: calc(100vh - 60px);
     width: 160px;
     background-color: var(--secondColor);
-    padding: 0 5px;
     padding-top: 40px;
     box-sizing: border-box;
     position: fixed;
@@ -14,6 +13,9 @@
     bottom: 0;
 }
 
+nav ul {
+    width: 100%;
+}
 
 .sidebar_container ul li {
     cursor: pointer;
@@ -24,13 +26,19 @@
     font-weight: 200;
     font-size: 1rem;
     font-weight: 600;
-    padding: 5px 10px;
-    margin: 5px;
-    border: 1px solid none;
+    padding: 5px 0;
+    padding-left: 25px;
+    border: 2px solid transparent;
+    transition: all .2s ease-in-out;
+    user-select: none;
 }
 
 .sidebar_container ul li:hover {
-    background-color: var(--firstColor);
-    border-radius: 5px;
+    background-color: #baadf596;
     border-color: #fff;
+}
+
+ul .active {
+    border-left: 2px solid #fff !important;
+    background-color: #baadf596;
 }

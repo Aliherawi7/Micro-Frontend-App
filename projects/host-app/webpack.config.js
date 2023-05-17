@@ -32,7 +32,6 @@ module.exports = {
       //For hosts (please adjust)
       remotes: {
         "mfe1": "http://localhost:4001/remoteEntry.js",
-        // "mfe2": "http://localhost:4200/remoteEntry.js",
       },
 
       shared: share({
@@ -40,7 +39,6 @@ module.exports = {
         "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-
         ...sharedMappings.getDescriptors()
       })
 

@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:host-app": "ng serve host-app --port 4000",
+    "start:mfe1": "ng serve mfe1 --port 4001",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

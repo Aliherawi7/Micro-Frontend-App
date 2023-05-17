@@ -8,10 +8,12 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent {
   route?: Router;
+  number?: number = 0
 
-  navigateTo() {
-    //this.route?.navigate(["/micro1"])
-    this.route?.navigateByUrl("/button")
-    console.log("/button")
+
+  setActive(number: number) {
+    this.number = number
   }
+
+
 }

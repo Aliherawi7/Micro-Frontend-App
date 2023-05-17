@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from "./app.component"
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NotesComponent } from './components/notes/notes.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
-  // {
-  //   path: "",
-  //   component: AppComponent,
-  //   pathMatch: "full"
-  // },
+
   {
     path: "notes",
     component: NotesComponent,
@@ -18,12 +14,19 @@ const routes: Routes = [
   {
     path: "micro1",
     loadChildren: (): Promise<any> => loadRemoteModule({
-      remoteName: 'http://localhost:4001/remoteEntry.js',
-      exposedModule: 'mfe1'
+      remoteEntry: "http://localhost:4001/remoteEntry.js",
+      remoteName: "mfe1",
+      exposedModule: "./app.module"
     }).then(m => m.AppModule)
-    // loadChildren: (): Promise<any> => import('mfe1/app.module').then(m => m.AppModule)
-  }
+  },
+  {
+    path: "**",
+    component: NotFoundComponent
+  },
+
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

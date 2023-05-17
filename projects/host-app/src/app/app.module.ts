@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { InputComponent } from './components/UI/input/input.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NotesComponent } from './components/notes/notes.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NotesComponent } from './components/notes/notes.component';
     ButtonComponent,
     InputComponent,
     SidebarComponent,
-    NotesComponent
+    NotesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,10 @@
 <div class="sidebar_container">
     <nav class="navigation">
         <ul>
-            <li routerLink="/notes">Notes</li>
-            <li routerLink="/micro1">Tasks to do</li>
-            <li routerLink="/">Dates</li>
-            <li routerLink="/">Done tasks</li>
+            <li routerLink="/notes" [ngClass]="{'active': number == 0}" (click)="setActive(0)">Notes</li>
+            <li routerLink="/micro1" [ngClass]="{'active': number == 1}" (click)="setActive(1)">Tasks to do</li>
+            <li routerLink="/test" [ngClass]="{'active': number == 2}" (click)="setActive(2)">Dates</li>
+            <li routerLink="/" [ngClass]="{'active': number == 3}" (click)="setActive(3)">Done tasks</li>
         </ul>
     </nav>
 </div>
