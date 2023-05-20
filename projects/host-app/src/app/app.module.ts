@@ -10,6 +10,8 @@ import { InputComponent } from './components/UI/input/input.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NotesComponent } from './components/notes/notes.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
+import { NoteComponent } from './components/note/note.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     InputComponent,
     SidebarComponent,
     NotesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent,
+    NoteComponent
   ],
   imports: [
     BrowserModule,
