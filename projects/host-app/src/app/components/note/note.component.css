@@ -1,0 +1,51 @@
+.note {
+    min-width: 200px;
+    min-height: 250px;
+    border-radius: 5px;
+    margin: 8px;
+    position: relative;
+    box-shadow: 0 0 3px 4px #ddd;
+}
+
+.note i {
+    margin-left: 0;
+}
+
+.note_date {
+    font-size: 0.6rem;
+}
+
+.note .note_header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.note .note_header .note_title {
+    line-height: 13px;
+}
+
+.note .note_header .note_title input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.note textarea {
+    padding: 10px;
+    font-size: 0.8rem;
+    background-color: #ffffff85;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    resize: none;
+    overflow-y: scroll;
+
+}
