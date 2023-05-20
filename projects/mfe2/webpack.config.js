@@ -11,7 +11,7 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "mfe2",
-    publicPath: "http://localhost:4002"
+    publicPath: "auto"
   },
   optimization: {
     runtimeChunk: false
@@ -27,20 +27,18 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       library: { type: "module" },
-
-      // For remotes (please adjust)
       name: "mfe2",
       filename: "remoteEntry.js",
       exposes: {
-        './Module': './projects/mfe2/src/app/app.module.ts',
+        './app.module': './projects/mfe2/src/app/app.module.ts',
       },
+
 
       shared: share({
         "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-
         ...sharedMappings.getDescriptors()
       })
 
