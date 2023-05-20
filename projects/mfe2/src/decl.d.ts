@@ -1,1 +1,1 @@
-declare module "mfe2/Module"
+declare module "mfe2/app.module"
