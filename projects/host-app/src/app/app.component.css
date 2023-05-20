@@ -2,11 +2,10 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    left: 160px;
-    top: 62px;
+    left: 180px;
+    top: 0;
     background-color: #fff;
     display: flex;
     overflow-y: scroll;
-    padding: 5px;
     box-sizing: border-box;
 }
