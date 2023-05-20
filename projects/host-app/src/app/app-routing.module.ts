@@ -3,9 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NotesComponent } from './components/notes/notes.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-
+  {
+    path: "",
+    component: HomeComponent,
+    pathMatch: "full"
+  },
   {
     path: "notes",
     component: NotesComponent,
@@ -16,7 +21,7 @@ const routes: Routes = [
     loadChildren: (): Promise<any> => loadRemoteModule({
       remoteEntry: "http://localhost:4001/remoteEntry.js",
       remoteName: "mfe1",
-      exposedModule: "./app.module"
+      exposedModule: "mfe1/app.module"
     }).then(m => m.AppModule)
   },
   {
@@ -24,7 +29,7 @@ const routes: Routes = [
     loadChildren: (): Promise<any> => loadRemoteModule({
       remoteEntry: "http://localhost:4002/remoteEntry.js",
       remoteName: "mfe2",
-      exposedModule: "./Module"
+      exposedModule: "mfe1/app.module"
     }).then(m => m.AppModule)
   },
   {
