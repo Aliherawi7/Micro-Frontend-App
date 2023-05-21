@@ -1,0 +1,10 @@
+.note_editor_header {
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.note_editor_container {
+    background-color: #fff;
+}

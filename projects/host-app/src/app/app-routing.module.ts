@@ -5,6 +5,7 @@ import { NotesComponent } from './components/notes/notes.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { NoteEditorComponent } from './components/note-editor/note-editor.component';
+import { Paths } from './constants/Paths';
 
 const routes: Routes = [
   {
@@ -13,12 +14,12 @@ const routes: Routes = [
     pathMatch: "full"
   },
   {
-    path: "notes",
+    path: Paths.notes,
     component: NotesComponent,
     pathMatch: "full"
   },
   {
-    path: "notes/edit-note/*",
+    path: Paths.newNote,
     component: NoteEditorComponent,
     // pathMatch: "full"
   },
