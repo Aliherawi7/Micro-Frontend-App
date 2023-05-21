@@ -4,6 +4,7 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NotesComponent } from './components/notes/notes.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
+import { NoteEditorComponent } from './components/note-editor/note-editor.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,11 @@ const routes: Routes = [
     path: "notes",
     component: NotesComponent,
     pathMatch: "full"
+  },
+  {
+    path: "notes/edit-note/*",
+    component: NoteEditorComponent,
+    // pathMatch: "full"
   },
   {
     path: "micro1",
