@@ -8,7 +8,11 @@
     cursor: pointer;
     transition: all 0.2s ease-out;
     user-select: none;
-    /* background-color: var(--firstColor); */
+    background-color: var(--orange);
+}
+
+.btn i {
+    margin: 0;
 }
 
 .btn:hover {
@@ -16,7 +20,7 @@
 }
 
 .general {
-    background: linear-gradient(to right, var(--firstColor), #1deffa);
+    background: linear-gradient(to right, var(--orange_dark), #fa3e1d);
 }
 
 .gray {
