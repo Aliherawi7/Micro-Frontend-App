@@ -48,6 +48,25 @@
     border-radius: 10px;
 }
 
+/* General Classes */
+
+.flex {
+    display: flex;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.align_items_center {
+    align-items: center;
+}
+
+.full_width {
+    width: calc(100vw - 180px);
+    background-color: #eadbff47;
+}
+
 a {
     text-decoration: none;
 }
@@ -66,6 +85,7 @@ button:active,
 }
 
 a,
+li,
 button {
     cursor: pointer;
 }
@@ -82,6 +102,10 @@ button {
     align-items: center;
 }
 
+ul {
+    list-style: none;
+}
+
 textarea {
     outline: none;
     border: none;
@@ -90,112 +114,6 @@ textarea {
     background-color: transparent;
 }
 
-
-.fade-in {
-    animation-name: fade-in;
-    animation-duration: .5s;
-    animation-timing-function: cubic-bezier(0.55, 0.01, 0.12, 0.97);
-}
-
-.entering-animation {
-    animation-name: sorting;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-duration: 0.6s;
-}
-
-.left-to-right {
-    animation-name: left-to-right;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.6, 0.01, 0.18, 1);
-}
-
-.right-to-left {
-    animation-name: right-to-left;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.6, 0.01, 0.18, 1);
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes right-to-left {
-    from {
-        transform: translateX(100vh);
-    }
-
-    to {
-        transform: translateX(0vh);
-    }
-}
-
-@keyframes left-to-right {
-    from {
-        transform: translateX(-100vh);
-    }
-
-    to {
-        transform: translateX(0vh);
-
-    }
-}
-
-
-@keyframes sorting {
-    from {
-        transform: scale(0);
-
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-/* all the aniations */
-@keyframes top-bottom-animate {
-    from {
-        transform: translateY(-100vh);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes bottom-top-animate {
-    from {
-        transform: translateY(100vh);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes right-to-left {
-    from {
-        transform: translateX(100vh);
-    }
-
-    to {
-        transform: translateX(0vh);
-    }
-}
-
-@keyframes left-to-right {
-    from {
-        transform: translateX(-100vh);
-    }
-
-    to {
-        transform: translateX(0vh);
-
-    }
+.box_shadow {
+    box-shadow: 0 0 3px 4px #ddd;
 }
