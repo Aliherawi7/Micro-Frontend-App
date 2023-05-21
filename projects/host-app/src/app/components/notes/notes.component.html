@@ -1,3 +1,16 @@
-<div class="container">
-    notes container
+<div class="notes_page full_width slideInLeft">
+    <div class="notes_header align_items_center">
+        <div class="search_bar flex align_items_center">
+            <div class="notes_title">Sticky Note</div>
+            <app-input id="search_note" inputType="text" placeholder="find your notes"></app-input>
+        </div>
+        <app-button routerLink="/notes/edit-note/*" icon="bi bi-plus-lg"></app-button>
+    </div>
+
+    <div class="notes_container">
+        <app-note *ngFor="let item of allNotes" color={{item.color}} text={{item.text}} title={{item.title}}
+            date={{item.date}}></app-note>
+    </div>
+
+
 </div>
