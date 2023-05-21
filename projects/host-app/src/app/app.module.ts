@@ -12,6 +12,7 @@ import { NotesComponent } from './components/notes/notes.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { NoteComponent } from './components/note/note.component';
+import { NoteEditorComponent } from './components/note-editor/note-editor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NoteComponent } from './components/note/note.component';
     NotesComponent,
     NotFoundComponent,
     HomeComponent,
-    NoteComponent
+    NoteComponent,
+    NoteEditorComponent
   ],
   imports: [
     BrowserModule,
