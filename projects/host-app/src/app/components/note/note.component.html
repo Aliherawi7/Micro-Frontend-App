@@ -1,11 +1,20 @@
-<div class="note entering-animation" [ngStyle]="{background:color}">
+<div class="note entering-animation box_shadow " [ngStyle]="{background:color}">
     <div class="note_header">
 
         <p class="note_title"><i class="bi bi-sticky-fill"></i>
             <input value={{title}} /><br /><span class="note_date">{{date}}</span>
         </p>
 
-        <span><i class="bi bi-three-dots"></i></span>
+        <div class="note_settings">
+            <span class="setting_icon"><i class="bi bi-three-dots"></i></span>
+            <div class="setting_menu">
+                <ul>
+                    <li><i class="bi bi-arrows-angle-expand"></i>open note</li>
+                    <li><i class="bi bi-save-fill"></i>save</li>
+                    <li><i class="bi bi-trash-fill"></i>delete</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="box_input">
         <textarea>{{text}}</textarea>
